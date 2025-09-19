@@ -9,7 +9,6 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> with TickerProviderStateMixin {
-  // 1. Mengganti _emailController menjadi _usernameController
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController = TextEditingController();
@@ -144,7 +143,6 @@ class _RegisterPageState extends State<RegisterPage> with TickerProviderStateMix
                 ),
               ),
               const SizedBox(height: 12),
-              // 4. Menampilkan username di pesan sukses
               Text(
                 'Akun dengan username ${_usernameController.text} berhasil dibuat!',
                 textAlign: TextAlign.center,
@@ -201,7 +199,6 @@ class _RegisterPageState extends State<RegisterPage> with TickerProviderStateMix
     );
   }
 
-  // 2. Mengganti _validateEmail menjadi _validateUsername
   String? _validateUsername(String? value) {
     if (value == null || value.isEmpty) {
       return 'Username harus diisi';
@@ -239,7 +236,7 @@ class _RegisterPageState extends State<RegisterPage> with TickerProviderStateMix
     bool obscureText = false,
     Widget? suffixIcon,
     String? Function(String?)? validator,
-    TextInputType keyboardType = TextInputType.text, // Tambahkan parameter keyboardType
+    TextInputType keyboardType = TextInputType.text,
   }) {
     return Container(
       margin: const EdgeInsets.only(bottom: 20),
@@ -258,7 +255,7 @@ class _RegisterPageState extends State<RegisterPage> with TickerProviderStateMix
         controller: controller,
         obscureText: obscureText,
         validator: validator,
-        keyboardType: keyboardType, // Gunakan keyboardType
+        keyboardType: keyboardType,
         style: const TextStyle(fontSize: 16),
         decoration: InputDecoration(
           prefixIcon: Container(
@@ -412,7 +409,6 @@ class _RegisterPageState extends State<RegisterPage> with TickerProviderStateMix
                       opacity: _fadeAnimation,
                       child: Column(
                         children: [
-                          // 3. Memperbarui panggilan _buildTextField
                           _buildTextField(
                             controller: _usernameController,
                             hintText: 'Masukkan username Anda',

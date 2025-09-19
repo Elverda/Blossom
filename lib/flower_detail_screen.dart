@@ -7,7 +7,6 @@ class FlowerDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Mengambil data dari map dengan fallback jika null
     final String title = flowerData['title'] ?? 'Judul Tidak Tersedia';
     final String subtitle = flowerData['subtitle'] ?? 'Deskripsi tidak tersedia.';
     final String image = flowerData['image'] ?? 'assets/images/placeholder.png';
@@ -31,7 +30,6 @@ class FlowerDetailScreen extends StatelessWidget {
               background: Image.asset(
                 image,
                 fit: BoxFit.cover,
-                // Menambahkan lapisan gelap agar judul lebih terbaca
                 color: Colors.black.withOpacity(0.3),
                 colorBlendMode: BlendMode.darken,
               ),
@@ -56,7 +54,7 @@ class FlowerDetailScreen extends StatelessWidget {
                     subtitle,
                     style: const TextStyle(
                       fontSize: 17,
-                      height: 1.5, // Jarak antar baris
+                      height: 1.5,
                       color: Colors.black54,
                     ),
                     textAlign: TextAlign.justify,

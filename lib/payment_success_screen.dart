@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:solo/shop_screen.dart'; // Import halaman toko untuk navigasi kembali
+import 'package:solo/shop_screen.dart';
 
 class PaymentSuccessScreen extends StatelessWidget {
   final String email;
@@ -29,7 +29,6 @@ class PaymentSuccessScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  // Animated Success Icon
                   Container(
                     width: 120,
                     height: 120,
@@ -60,7 +59,6 @@ class PaymentSuccessScreen extends StatelessWidget {
 
                   const SizedBox(height: 40),
 
-                  // Success Card
                   Container(
                     padding: const EdgeInsets.all(32),
                     margin: const EdgeInsets.symmetric(horizontal: 8),
@@ -82,7 +80,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 32,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xFF00695C), // Teal 800
+                            color: Color(0xFF00695C),
                             letterSpacing: -0.5,
                           ),
                           textAlign: TextAlign.center,
@@ -94,7 +92,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                           width: 60,
                           height: 4,
                           decoration: BoxDecoration(
-                            color: const Color(0xFF26A69A), // Teal 500
+                            color: const Color(0xFF26A69A),
                             borderRadius: BorderRadius.circular(2),
                           ),
                         ),
@@ -114,7 +112,6 @@ class PaymentSuccessScreen extends StatelessWidget {
 
                         const SizedBox(height: 32),
 
-                        // Order Info Card
                         Container(
                           padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
@@ -172,7 +169,6 @@ class PaymentSuccessScreen extends StatelessWidget {
 
                   const SizedBox(height: 48),
 
-                  // Enhanced Button
                   Container(
                     width: double.infinity,
                     height: 56,
@@ -224,7 +220,6 @@ class PaymentSuccessScreen extends StatelessWidget {
 
                   const SizedBox(height: 24),
 
-                  // Additional decorative elements
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart'; // Untuk format harga
+import 'package:intl/intl.dart';
 import 'package:solo/payment_screen.dart';
 
 class CartScreen extends StatefulWidget {
@@ -192,12 +192,10 @@ class _CartScreenState extends State<CartScreen> with SingleTickerProviderStateM
                     children: [
                       Text(
                         'Total Harga',
-                        // FIX: Mengganti headline6 dengan titleLarge
                         style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
                       ),
                       Text(
                         currencyFormatter.format(_totalPrice),
-                        // FIX: Mengganti headline6 dengan titleLarge
                         style: theme.textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: Colors.deepPurple,

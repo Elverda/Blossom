@@ -218,7 +218,6 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          // Header Image & Title
                           Row(
                             children: [
                               ClipRRect(
@@ -267,7 +266,6 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
 
                           const SizedBox(height: 24),
 
-                          // Deskripsi
                           _buildInfoSection(
                             "Deskripsi",
                             item["deskripsi"],
@@ -277,7 +275,6 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
 
                           const SizedBox(height: 20),
 
-                          // Makna & Simbolisme
                           _buildInfoSection(
                             "Makna & Simbolisme",
                             item["makna"],
@@ -287,7 +284,6 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
 
                           const SizedBox(height: 20),
 
-                          // Cocok Untuk
                           _buildInfoSection(
                             "Cocok Untuk",
                             item["cocokUntuk"],
@@ -297,7 +293,6 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
 
                           const SizedBox(height: 20),
 
-                          // Jenis Bunga Utama
                           _buildInfoSection(
                             "Jenis Bunga Utama",
                             item["jenisUtama"],
@@ -307,7 +302,6 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
 
                           const SizedBox(height: 32),
 
-                          // Action Buttons
                           Row(
                             children: [
                               Expanded(
@@ -428,7 +422,6 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
                     width: double.infinity,
                     height: double.infinity,
                   ),
-                  // Overlay untuk menunjukkan bisa diklik
                   Positioned(
                     top: 8,
                     right: 8,

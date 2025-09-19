@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:solo/login_page.dart';
-import 'package:solo/flower_detail_screen.dart'; // Import halaman detail
+import 'package:solo/flower_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final String email;
@@ -16,7 +16,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late Animation<double> _fadeAnimation;
   late Animation<Offset> _slideAnimation;
 
-  // Data untuk daftar bunga dengan warna gradient
   final List<Map<String, dynamic>> flowerFacts = [
     {
       "title": "Mawar: Simbol Cinta Universal",
@@ -215,7 +214,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         color: Colors.transparent,
         child: InkWell(
           onTap: () {
-            // FIX: Membuat Map<String, String> yang benar
             Map<String, String> flowerData = {
               'title': fact['title'].toString(),
               'subtitle': fact['subtitle'].toString(),
@@ -383,7 +381,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         child: ElevatedButton(
                           onPressed: () {
-                            // FIX: Membuat Map<String, String> yang benar
                             Map<String, String> flowerData = {
                               'title': fact['title'].toString(),
                               'subtitle': fact['subtitle'].toString(),
@@ -452,7 +449,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       backgroundColor: const Color(0xFFF8F9FA),
       body: CustomScrollView(
         slivers: [
-          // Enhanced App Bar
           SliverAppBar(
             expandedHeight: 200.0,
             floating: false,
@@ -487,9 +483,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      Color(0xFF2196F3), // Blue
-                      Color(0xFF21CBF3), // Light Blue
-                      Color(0xFF9C27B0), // Purple
+                      Color(0xFF2196F3),
+                      Color(0xFF21CBF3),
+                      Color(0xFF9C27B0),
                     ],
                     stops: [0.0, 0.6, 1.0],
                   ),
@@ -566,7 +562,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
           ),
 
-          // Welcome section
           SliverToBoxAdapter(
             child: FadeTransition(
               opacity: _fadeAnimation,
@@ -638,7 +633,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
           ),
 
-          // Facts list
           SliverList(
             delegate: SliverChildBuilderDelegate(
                   (context, index) {

@@ -129,7 +129,6 @@ class _PaymentScreenState extends State<PaymentScreen>
                   ),
                 ),
                 const SizedBox(height: 20),
-                // Progress steps
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(3, (index) {
@@ -201,7 +200,6 @@ class _PaymentScreenState extends State<PaymentScreen>
       ),
       body: Column(
         children: [
-          // Enhanced Header dengan wave design
           Container(
             width: double.infinity,
             margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -250,7 +248,6 @@ class _PaymentScreenState extends State<PaymentScreen>
                     ),
                   ),
                 ),
-                // Content
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
                   child: Column(
@@ -298,7 +295,6 @@ class _PaymentScreenState extends State<PaymentScreen>
             ),
           ),
 
-          // Content area
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(20),
@@ -369,7 +365,6 @@ class _PaymentScreenState extends State<PaymentScreen>
 
                       const SizedBox(height: 32),
 
-                      // Security info
                       Container(
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
@@ -429,7 +424,6 @@ class _PaymentScreenState extends State<PaymentScreen>
             ),
           ),
 
-          // Enhanced Payment Button
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(

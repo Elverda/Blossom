@@ -57,7 +57,6 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
     },
   ];
 
-  // Map untuk menentukan gambar berdasarkan nama produk
   String _getImageAsset(String productName) {
     switch (productName.toUpperCase()) {
       case 'BUKET BUNGA MERAH':
@@ -688,7 +687,6 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Row(
                                   children: [
-                                    // Ganti icon dengan image asset
                                     Container(
                                       width: 50,
                                       height: 50,
@@ -708,7 +706,6 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen>
                                           _getImageAsset(item['nama']),
                                           fit: BoxFit.cover,
                                           errorBuilder: (context, error, stackTrace) {
-                                            // Fallback jika gambar tidak ditemukan
                                             return Container(
                                               decoration: BoxDecoration(
                                                 gradient: const LinearGradient(

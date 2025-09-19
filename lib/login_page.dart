@@ -3,8 +3,8 @@ import 'package:solo/models/admin.dart';
 import 'package:solo/models/pengguna.dart';
 import 'package:solo/models/user.dart';
 import 'package:solo/register_page.dart';
-import 'package:solo/home_screen.dart'; // Halaman BARU (Fakta Bunga)
-import 'package:solo/shop_screen.dart'; // Halaman LAMA (Toko Bunga)
+import 'package:solo/home_screen.dart';
+import 'package:solo/shop_screen.dart';
 import 'package:solo/admin_dashboard_screen.dart';
 
 class LoginPage extends StatefulWidget {
@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
   final TextEditingController _passwordController = TextEditingController();
   bool _isPasswordVisible = false;
   bool _isLoading = false;
-  String _selectedRole = 'User'; // Default role
+  String _selectedRole = 'User';
 
   late AnimationController _animationController;
   late AnimationController _fadeController;
@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
 
     setState(() => _isLoading = true);
 
-    // Simulate loading delay
+
     await Future.delayed(const Duration(seconds: 2));
 
     if (_selectedRole == 'User') {
@@ -219,7 +219,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                 children: [
                   const SizedBox(height: 20),
 
-                  // Welcome Header
                   FadeTransition(
                     opacity: _fadeAnimation,
                     child: SlideTransition(
@@ -278,7 +277,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
 
                   const SizedBox(height: 40),
 
-                  // Logo
                   ScaleTransition(
                     scale: _scaleAnimation,
                     child: Hero(
@@ -308,7 +306,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
 
                   const SizedBox(height: 40),
 
-                  // Role Selector
                   FadeTransition(
                     opacity: _fadeAnimation,
                     child: Container(
@@ -358,7 +355,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
 
                   const SizedBox(height: 30),
 
-                  // Form Fields
                   FadeTransition(
                     opacity: _fadeAnimation,
                     child: Column(
@@ -388,7 +384,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
 
                   const SizedBox(height: 32),
 
-                  // Login Button
                   FadeTransition(
                     opacity: _fadeAnimation,
                     child: Container(
@@ -449,7 +444,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
 
                   const SizedBox(height: 40),
 
-                  // Register Link
                   FadeTransition(
                     opacity: _fadeAnimation,
                     child: Container(

@@ -65,9 +65,9 @@ class _SplashScreenState extends State<SplashScreen>
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFFFCE4EC), // Pink 50
-              Color(0xFFF8BBD9), // Pink 100
-              Color(0xFFF48FB1), // Pink 200
+              Color(0xFFFCE4EC),
+              Color(0xFFF8BBD9),
+              Color(0xFFF48FB1),
             ],
             stops: [0.0, 0.5, 1.0],
           ),
@@ -77,7 +77,6 @@ class _SplashScreenState extends State<SplashScreen>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo dengan animasi
                 AnimatedBuilder(
                   animation: _controller,
                   builder: (context, child) {
@@ -127,7 +126,6 @@ class _SplashScreenState extends State<SplashScreen>
 
                 const SizedBox(height: 40),
 
-                // Teks dengan animasi slide
                 SlideTransition(
                   position: _slideAnimation,
                   child: FadeTransition(
@@ -164,9 +162,9 @@ class _SplashScreenState extends State<SplashScreen>
                         ShaderMask(
                           shaderCallback: (bounds) => const LinearGradient(
                             colors: [
-                              Color(0xFFE91E63), // Pink 500
-                              Color(0xFFF06292), // Pink 300
-                              Color(0xFFAD1457), // Pink 700
+                              Color(0xFFE91E63),
+                              Color(0xFFF06292),
+                              Color(0xFFAD1457),
                             ],
                           ).createShader(bounds),
                           child: const Text(
@@ -193,7 +191,6 @@ class _SplashScreenState extends State<SplashScreen>
 
                 const SizedBox(height: 80),
 
-                // Tombol dengan design modern
                 SlideTransition(
                   position: _slideAnimation,
                   child: FadeTransition(
