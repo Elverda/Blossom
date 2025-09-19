@@ -19,37 +19,37 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   final List<Map<String, dynamic>> flowerFacts = [
     {
       "title": "Mawar: Simbol Cinta Universal",
-      "subtitle": "Mawar merah adalah lambang cinta yang paling dikenal di seluruh dunia, sering kali diasosiasikan dengan perasaan mendalam dan emosional. Bunga ini tidak hanya diberikan pada hari kasih sayang, tetapi juga dalam berbagai momen penting seperti pernikahan, ulang tahun, dan bahkan sebagai ungkapan simpati. Dengan lebih dari 150 spesies mawar yang ada, masing-masing memiliki warna dan makna yang unik. Sebagai contoh, mawar putih melambangkan kemurnian, sementara mawar kuning sering kali diartikan sebagai persahabatan. Keberagaman ini menjadikannya pilihan yang ideal untuk mengekspresikan berbagai nuansa perasaan manusia. Selain itu, mawar juga memiliki sejarah panjang dalam budaya dan seni, sering kali muncul dalam puisi dan lukisan sebagai simbol keindahan dan cinta abadi.",
+      "subtitle": "Mawar merah adalah lambang cinta yang paling dikenal di seluruh dunia. Bunga ini sering diberikan sebagai hadiah untuk mengungkapkan perasaan kasih sayang, gairah, dan rasa hormat. Ada lebih dari 150 spesies mawar di seluruh dunia.",
       "image": "assets/images/mawarr.jpeg",
-      "gradient": [Color(0xFFE91E63), Color(0xFFAD1457)], // Pink gradient
+      "gradient": [Color(0xFFE91E63), Color(0xFFAD1457)],
       "icon": Icons.favorite,
     },
     {
       "title": "Tulip: Pernah Lebih Berharga dari Emas",
-      "subtitle": "Pada abad ke-17 di Belanda, selama periode yang dikenal sebagai 'Tulip Mania', beberapa jenis umbi tulip langka harganya bisa setara dengan sebuah rumah mewah di Amsterdam. Fenomena ini menunjukkan seberapa besar daya tarik yang dimiliki oleh tulip dalam masyarakat pada saat itu, di mana para pedagang dan kolektor berlomba-lomba untuk memiliki tanaman ini. Tulip bukan hanya sekadar bunga; mereka menjadi simbol status sosial dan kekayaan. Ketika harga tulip mulai meroket, banyak orang berinvestasi dalam umbi tulip, berharap untuk mendapatkan keuntungan yang besar. Namun, gelembung ini akhirnya meledak, menyebabkan kerugian besar bagi banyak orang. Meskipun demikian, tulip tetap menjadi simbol keindahan dan kemewahan, serta terus menarik perhatian para pecinta bunga di seluruh dunia hingga hari ini.",
+      "subtitle": "Pada abad ke-17 di Belanda, selama periode yang dikenal sebagai 'Tulip Mania', beberapa jenis umbi tulip langka harganya bisa setara dengan sebuah rumah mewah di Amsterdam. Fenomena ini dianggap sebagai salah satu gelembung spekulatif pertama dalam sejarah.",
       "image": "assets/images/tulip.jpeg",
-      "gradient": [Color(0xFF9C27B0), Color(0xFF6A1B9A)], // Purple gradient
+      "gradient": [Color(0xFF9C27B0), Color(0xFF6A1B9A)],
       "icon": Icons.diamond,
     },
     {
       "title": "Anggrek: Salah Satu Keluarga Bunga Terbesar",
-      "subtitle": "Dengan lebih dari 25.000 spesies yang telah diidentifikasi, anggrek adalah salah satu keluarga tanaman berbunga terbesar dan paling beragam di dunia. Mereka dapat ditemukan di hampir setiap habitat di bumi, dari hutan hujan tropis yang lembap hingga gurun yang kering. Keindahan dan keunikan anggrek membuatnya sangat populer di kalangan pecinta tanaman dan kolektor. Setiap spesies anggrek memiliki bentuk, warna, dan aroma yang berbeda-beda, menjadikannya sangat menarik untuk dipelajari dan dibudidayakan. Selain itu, anggrek memiliki makna simbolis dalam banyak budaya, sering kali melambangkan keanggunan, kekuatan, dan cinta yang mendalam. Dalam berbagai tradisi, anggrek juga sering digunakan dalam upacara dan ritual, menambah daya tarik spiritual dan budaya kepada bunga ini.",
-      "image": "assets/images/anggrek.jpeg",
-      "gradient": [Color(0xFF3F51B5), Color(0xFF283593)], // Indigo gradient
+      "subtitle": "Dengan lebih dari 25.000 spesies yang telah diidentifikasi, anggrek adalah salah satu keluarga tanaman berbunga terbesar dan paling beragam di dunia. Mereka dapat ditemukan di hampir setiap habitat di bumi.",
+      "image": "assets/images/buket_ungu.jpeg",
+      "gradient": [Color(0xFF3F51B5), Color(0xFF283593)],
       "icon": Icons.nature,
     },
     {
       "title": "Bunga Matahari: Selalu Menghadap Matahari",
-      "subtitle": "Bunga matahari muda menunjukkan perilaku unik yang disebut heliotropisme, di mana kuncupnya akan mengikuti pergerakan matahari dari timur ke barat setiap hari. Fenomena ini tidak hanya menarik secara visual, tetapi juga mencerminkan ketahanan dan adaptasi tanaman terhadap lingkungan. Namun, saat dewasa, sebagian besar bunga matahari akan berhenti bergerak dan menghadap ke timur, menciptakan pemandangan yang menawan di ladang. Selain keindahannya, biji bunga matahari merupakan sumber nutrisi yang kaya, mengandung protein, lemak sehat, dan berbagai vitamin yang bermanfaat bagi kesehatan. Bunga matahari juga memiliki makna simbolis, sering kali diartikan sebagai harapan dan kebahagiaan, serta menjadi lambang dari kesetiaan dan keabadian. Oleh karena itu, bunga ini sering digunakan dalam rangkaian bunga untuk perayaan dan acara bahagia.",
-      "image": "assets/images/Matahari.jpeg",
-      "gradient": [Color(0xFFFF9800), Color(0xFFE65100)], // Orange gradient
+      "subtitle": "Bunga matahari muda menunjukkan perilaku unik yang disebut heliotropisme, di mana kuncupnya akan mengikuti pergerakan matahari dari timur ke barat setiap hari. Namun, saat dewasa, sebagian besar akan berhenti dan menghadap ke timur.",
+      "image": "assets/images/buket_kuning.jpeg",
+      "gradient": [Color(0xFFFF9800), Color(0xFFE65100)],
       "icon": Icons.wb_sunny,
     },
     {
       "title": "Lavender: Bukan Hanya untuk Aroma",
-      "subtitle": "Selain digunakan secara luas dalam aromaterapi untuk relaksasi dan pengurangan stres, lavender juga secara historis digunakan sebagai antiseptik dan anti-inflamasi. Minyaknya dapat dioleskan untuk menenangkan sengatan serangga, luka bakar ringan, atau bahkan masalah kulit lainnya. Selain manfaat kesehatan, lavender memiliki daya tarik visual yang kuat, sering kali ditanam di kebun untuk menarik pengunjung dengan warna ungunya yang cerah dan aromanya yang menenangkan. Lavender juga digunakan dalam berbagai produk kecantikan dan perawatan kulit, berkat sifatnya yang menenangkan dan menyegarkan. Dalam banyak budaya, lavender melambangkan kesetiaan, ketenangan, dan cinta, menjadikannya pilihan populer dalam rangkaian bunga untuk berbagai acara, dari pernikahan hingga upacara peringatan.",
-      "image": "assets/images/lavender.jpeg",
-      "gradient": [Color(0xFF2196F3), Color(0xFF1565C0)], // Blue gradient
+      "subtitle": "Selain digunakan secara luas dalam aromaterapi untuk relaksasi, lavender juga secara historis digunakan sebagai antiseptik dan anti-inflamasi. Minyaknya dapat dioleskan untuk menenangkan sengatan serangga atau luka bakar ringan.",
+      "image": "assets/images/buket_biru.jpeg",
+      "gradient": [Color(0xFF2196F3), Color(0xFF1565C0)],
       "icon": Icons.spa,
     },
   ];
@@ -101,8 +101,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color(0xFFE3F2FD), // Blue 50
-                  Color(0xFFF3E5F5), // Purple 50
+                  Color(0xFFE3F2FD),
+                  Color(0xFFF3E5F5),
                 ],
               ),
             ),
@@ -447,212 +447,206 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF8F9FA),
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            expandedHeight: 200.0,
-            floating: false,
-            pinned: true,
-            elevation: 0,
-            backgroundColor: Colors.transparent,
-            actions: [
-              Container(
-                margin: const EdgeInsets.only(right: 16),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.9),
-                  borderRadius: BorderRadius.circular(12),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
-                      blurRadius: 8,
-                      offset: const Offset(0, 2),
-                    ),
-                  ],
-                ),
-                child: IconButton(
-                  icon: const Icon(Icons.logout_rounded, color: Color(0xFF2196F3)),
-                  tooltip: 'Logout',
-                  onPressed: _showLogoutDialog,
-                ),
-              ),
-            ],
-            flexibleSpace: FlexibleSpaceBar(
-              background: Container(
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      Color(0xFF2196F3),
-                      Color(0xFF21CBF3),
-                      Color(0xFF9C27B0),
+      body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              expandedHeight: 200.0,
+              floating: false,
+              pinned: true,
+              elevation: 0,
+              backgroundColor: Colors.transparent,
+              actions: [
+                Container(
+                  margin: const EdgeInsets.only(right: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.9),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
                     ],
-                    stops: [0.0, 0.6, 1.0],
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.logout_rounded, color: Color(0xFF2196F3)),
+                    tooltip: 'Logout',
+                    onPressed: _showLogoutDialog,
                   ),
                 ),
-                child: Stack(
-                  children: [
-                    // Decorative circles
-                    Positioned(
-                      top: -30,
-                      right: -30,
-                      child: Container(
-                        width: 120,
-                        height: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.1),
-                          shape: BoxShape.circle,
+              ],
+              flexibleSpace: FlexibleSpaceBar(
+                background: Container(
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Color(0xFF2196F3),
+                        Color(0xFF21CBF3),
+                        Color(0xFF9C27B0),
+                      ],
+                      stops: [0.0, 0.6, 1.0],
+                    ),
+                  ),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: -30,
+                        right: -30,
+                        child: Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.1),
+                            shape: BoxShape.circle,
+                          ),
                         ),
                       ),
-                    ),
-                    Positioned(
-                      bottom: -50,
-                      left: -50,
-                      child: Container(
-                        width: 150,
-                        height: 150,
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.1),
-                          shape: BoxShape.circle,
+                      Positioned(
+                        bottom: -50,
+                        left: -50,
+                        child: Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.1),
+                            shape: BoxShape.circle,
+                          ),
                         ),
                       ),
-                    ),
-                    // Content
-                    Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.all(16),
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.2),
-                              shape: BoxShape.circle,
+                      Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(16),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.2),
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Icon(
+                                Icons.local_florist,
+                                size: 40,
+                                color: Colors.white,
+                              ),
                             ),
-                            child: const Icon(
-                              Icons.local_florist,
-                              size: 40,
-                              color: Colors.white,
+                            const SizedBox(height: 16),
+                            const Text(
+                              'Dunia Bunga',
+                              style: TextStyle(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                letterSpacing: 1.2,
+                              ),
                             ),
-                          ),
-                          const SizedBox(height: 16),
-                          const Text(
-                            'Dunia Bunga',
-                            style: TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              letterSpacing: 1.2,
+                            const SizedBox(height: 8),
+                            Text(
+                              'Jelajahi keajaiban alam',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white.withOpacity(0.9),
+                                fontWeight: FontWeight.w300,
+                              ),
                             ),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Jelajahi keajaiban alam',
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.white.withOpacity(0.9),
-                              fontWeight: FontWeight.w300,
-                            ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
-
-          SliverToBoxAdapter(
-            child: FadeTransition(
-              opacity: _fadeAnimation,
-              child: Container(
-                margin: const EdgeInsets.all(20),
-                padding: const EdgeInsets.all(24),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0xFF2196F3).withOpacity(0.1),
-                      blurRadius: 20,
-                      offset: const Offset(0, 10),
-                    ),
-                  ],
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFF2196F3), Color(0xFF9C27B0)],
-                        ),
-                        borderRadius: BorderRadius.circular(16),
+          ];
+        },
+        body: ListView.builder(
+          padding: const EdgeInsets.only(top: 0, bottom: 20),
+          itemCount: flowerFacts.length + 1,
+          itemBuilder: (context, index) {
+            if (index == 0) {
+              // Welcome section
+              return FadeTransition(
+                opacity: _fadeAnimation,
+                child: Container(
+                  margin: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(24),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF2196F3).withOpacity(0.1),
+                        blurRadius: 20,
+                        offset: const Offset(0, 10),
                       ),
-                      child: const Icon(Icons.person_outline, color: Colors.white, size: 28),
-                    ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            'Selamat Datang,',
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            widget.email,
-                            style: const TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF2196F3),
-                            ),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Temukan fakta menarik tentang bunga-bunga indah',
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.grey[600],
-                              height: 1.3,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-                  (context, index) {
-                return SlideTransition(
-                  position: _slideAnimation,
-                  child: FadeTransition(
-                    opacity: _fadeAnimation,
-                    child: _buildFactCard(flowerFacts[index], index),
+                    ],
                   ),
-                );
-              },
-              childCount: flowerFacts.length,
-            ),
-          ),
-
-          // Bottom spacing
-          const SliverToBoxAdapter(
-            child: SizedBox(height: 20),
-          ),
-        ],
+                  child: Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFF2196F3), Color(0xFF9C27B0)],
+                          ),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: const Icon(Icons.person_outline, color: Colors.white, size: 28),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Selamat Datang,',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              widget.email,
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF2196F3),
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              'Temukan fakta menarik tentang bunga-bunga indah',
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: Colors.grey[600],
+                                height: 1.3,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            }
+            final factIndex = index - 1;
+            return SlideTransition(
+              position: _slideAnimation,
+              child: FadeTransition(
+                opacity: _fadeAnimation,
+                child: _buildFactCard(flowerFacts[factIndex], factIndex),
+              ),
+            );
+          },
+        ),
       ),
     );
   }

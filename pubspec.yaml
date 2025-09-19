@@ -14,8 +14,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   badges: ^2.0.3
   video_player: ^2.4.7
-  fl_chart: ^0.68.0 # Versi diperbarui untuk kompatibilitas
-  intl: ^0.18.0  # <-- Tambahkan ini
+  fl_chart: ^0.68.0
+  intl: ^0.18.0
 
 dev_dependencies:
   flutter_test:
