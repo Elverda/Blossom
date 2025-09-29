@@ -1,10 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:solo/shop_screen.dart';
+import 'package:audioplayers/audioplayers.dart';
 
-class PaymentSuccessScreen extends StatelessWidget {
+class PaymentSuccessScreen extends StatefulWidget {
   final String email;
 
   const PaymentSuccessScreen({Key? key, required this.email}) : super(key: key);
+
+  @override
+  State<PaymentSuccessScreen> createState() => _PaymentSuccessScreenState();
+}
+
+class _PaymentSuccessScreenState extends State<PaymentSuccessScreen> {
+  late AudioPlayer _audioPlayer;
+
+  @override
+  void initState() {
+    super.initState();
+    _audioPlayer = AudioPlayer();
+    _playSound();
+  }
+
+  void _playSound() async {
+    await _audioPlayer.play(AssetSource('sounds/makasih.mp3'));
+  }
+
+  @override
+  void dispose() {
+    _audioPlayer.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -151,7 +176,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                      'Telah dikirim ke $email',
+                                      'Telah dikirim ke ${widget.email}',
                                       style: TextStyle(
                                         fontSize: 13,
                                         color: Colors.grey[600],
@@ -187,7 +212,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                         Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ShopScreen(email: email),
+                            builder: (context) => ShopScreen(email: widget.email),
                           ),
                               (Route<dynamic> route) => false,
                         );
