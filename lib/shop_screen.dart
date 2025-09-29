@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:solo/login_page.dart';
+import 'package:solo/search.dart';
 import 'cart_screen.dart';
 
 class ShopScreen extends StatefulWidget {
@@ -14,6 +15,8 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
   List<Map<String, dynamic>> _cart = [];
   late AnimationController _fadeController;
   late Animation<double> _fadeAnimation;
+  late TextEditingController _searchController;
+  List<Map<String, dynamic>> _filteredBunga = [];
 
   final List<Map<String, dynamic>> bunga = [
     {
@@ -93,6 +96,9 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
+    _searchController = TextEditingController();
+    _filteredBunga = List.from(bunga);
+    _searchController.addListener(_onSearchChanged);
     _fadeController = AnimationController(
       duration: const Duration(milliseconds: 600),
       vsync: this,
@@ -103,8 +109,23 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
 
   @override
   void dispose() {
+    _searchController.removeListener(_onSearchChanged);
+    _searchController.dispose();
     _fadeController.dispose();
     super.dispose();
+  }
+
+  void _onSearchChanged() {
+    setState(() {
+      final query = _searchController.text.toLowerCase();
+      if (query.isEmpty) {
+        _filteredBunga = List.from(bunga);
+      } else {
+        _filteredBunga = bunga.where((item) {
+          return item['nama'].toLowerCase().contains(query);
+        }).toList();
+      }
+    });
   }
 
   void _addToCart(Map<String, dynamic> item) {
@@ -574,6 +595,17 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    AnimSearchBar(
+                      width: MediaQuery.of(context).size.width,
+                      textController: _searchController,
+                      onSuffixTap: () {
+                        _searchController.clear();
+                      },
+                      onSubmitted: (value) {},
+                      searchBarOpen: (toggle) {},
+                      helpText: "Cari bunga...",
+                    ),
+                    const SizedBox(height: 20),
                     Text(
                       'Selamat Datang,',
                       style: TextStyle(fontSize: 16, color: Colors.grey[600]),
@@ -628,9 +660,9 @@ class _ShopScreenState extends State<ShopScreen> with TickerProviderStateMixin {
               delegate: SliverChildBuilderDelegate(
                     (context, index) => FadeTransition(
                   opacity: _fadeAnimation,
-                  child: _buildFlowerCard(bunga[index], index),
+                  child: _buildFlowerCard(_filteredBunga[index], index),
                 ),
-                childCount: bunga.length,
+                childCount: _filteredBunga.length,
               ),
             ),
           ),
