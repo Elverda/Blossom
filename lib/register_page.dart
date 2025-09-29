@@ -365,7 +365,7 @@ class _RegisterPageState extends State<RegisterPage> with TickerProviderStateMix
                               ),
                               SizedBox(height: 4),
                               Text(
-                                'Bergabunglah dengan komunitas pencinta bunga',
+                                'Bergabunglah dengan kami di blossom',
                                 style: TextStyle(
                                   fontSize: 14,
                                   color: Colors.white70,
